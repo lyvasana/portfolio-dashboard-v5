@@ -30,679 +30,146 @@
         .nav-item.active { background:var(--primary-light); color:var(--primary); border-left-color:var(--primary); font-weight:600; }
         .nav-item .material-icons { font-size:19px; }
         .nav-badge { margin-left:auto; background:var(--primary-light); color:var(--primary); font-size:11px; font-weight:700; padding:1px 7px; border-radius:10px; }
-        .nav-hr { border:none; border-top:1px solid var(--border); margin:6px 0; }
-        .quick-upload { padding:14px 18px; border-top:1px solid var(--border); }
-        .qu-label { font-size:10px; font-weight:700; color:var(--text-secondary); text-transform:uppercase; letter-spacing:.6px; margin-bottom:8px; display:block; }
-        .qu-btn { display:flex; align-items:center; gap:8px; padding:7px 10px; border:1px dashed var(--border); border-radius:7px; cursor:pointer; font-size:11.5px; color:var(--text-secondary); background:var(--bg-main); width:100%; margin-bottom:6px; transition:all .2s; }
-        .qu-btn:hover { border-color:var(--primary); color:var(--primary); background:var(--primary-light); }
-        .qu-btn .material-icons { font-size:15px; }
-        .qu-btn input { display:none; }
-        .qu-status { font-size:10.5px; margin-bottom:4px; }
-        .qu-status.ok { color:var(--success); }
-        .qu-status.err { color:var(--error); }
         .main-content { flex:1; margin-left:264px; }
         .top-bar { background:var(--bg-white); border-bottom:1px solid var(--border); padding:13px 24px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100; }
-        .menu-toggle { display:none; background:none; border:none; cursor:pointer; }
-        .menu-toggle .material-icons { font-size:26px; color:var(--text-primary); }
         .top-title { font-size:19px; font-weight:700; }
         .top-right { display:flex; gap:9px; align-items:center; }
         .as-of { font-size:12px; color:var(--text-secondary); background:var(--bg-main); padding:4px 12px; border-radius:20px; border:1px solid var(--border); }
         .btn { border:none; padding:7px 14px; border-radius:6px; cursor:pointer; display:flex; align-items:center; gap:5px; font-size:12.5px; font-weight:500; }
         .btn-p { background:var(--primary); color:#fff; }
-        .btn-p:hover { background:var(--primary-hover); }
         .btn-o { background:#fff; color:var(--primary); border:1px solid var(--primary); }
-        .btn-o:hover { background:var(--primary-light); }
         .content { padding:22px 24px; }
-        .banner { display:flex; align-items:center; gap:12px; padding:12px 16px; border-radius:9px; border:1px solid var(--border); background:var(--bg-main); margin-bottom:18px; font-size:12.5px; color:var(--text-secondary); }
-        .banner .material-icons { font-size:19px; color:var(--info); flex-shrink:0; }
-        .banner.live { border-color:var(--success); background:rgba(16,185,129,.05); }
-        .banner.live .material-icons { color:var(--success); }
         .sec-block { margin-bottom:28px; }
         .sec-div { display:flex; align-items:center; gap:12px; padding:12px 18px; border-radius:9px; margin-bottom:18px; }
         .sec-div.ov { border-left:4px solid var(--purple); background:linear-gradient(90deg,rgba(107,70,193,.06),transparent); }
         .sec-div.db { border-left:4px solid var(--primary); background:linear-gradient(90deg,rgba(11,95,109,.06),transparent); }
         .sec-div.eq { border-left:4px solid var(--secondary); background:linear-gradient(90deg,rgba(245,166,35,.07),transparent); }
-        .sec-div.im { border-left:4px solid var(--info); background:linear-gradient(90deg,rgba(59,130,246,.06),transparent); }
-        .sec-icon { font-size:26px; }
-        .sec-icon.ov { color:var(--purple); }
-        .sec-icon.db { color:var(--primary); }
-        .sec-icon.eq { color:var(--secondary); }
-        .sec-icon.im { color:var(--info); }
-        .sec-title { font-size:18px; font-weight:700; }
-        .sec-sub { font-size:12.5px; color:var(--text-secondary); margin-top:2px; }
         .kpi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:14px; margin-bottom:16px; }
-        .kpi-grid-sm { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; margin-bottom:16px; }
-        .kpi-card { background:var(--bg-white); border-radius:11px; padding:16px 18px; border:1px solid var(--border); box-shadow:var(--shadow-sm); transition:transform .2s,box-shadow .2s; }
-        .kpi-card:hover { transform:translateY(-2px); box-shadow:var(--shadow-md); }
-        .kpi-card.ta { border-top:3px solid var(--primary); }
-        .kpi-card.tb { border-top:3px solid var(--secondary); }
-        .kpi-card.tc { border-top:3px solid var(--purple); }
-        .kpi-lbl { font-size:10.5px; color:var(--text-secondary); font-weight:600; text-transform:uppercase; letter-spacing:.5px; margin-bottom:5px; }
+        .kpi-card { background:var(--bg-white); border-radius:11px; padding:16px 18px; border:1px solid var(--border); box-shadow:var(--shadow-sm); }
         .kpi-val { font-size:26px; font-weight:700; line-height:1.2; margin-bottom:3px; }
-        .kpi-sub { font-size:11.5px; color:var(--text-secondary); }
         .chart-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(360px,1fr)); gap:16px; margin-bottom:16px; }
-        .chart-card { background:var(--bg-white); border-radius:11px; padding:20px; border:1px solid var(--border); box-shadow:var(--shadow-sm); }
-        .chart-card.full { grid-column:1/-1; }
-        .c-title { font-size:14.5px; font-weight:600; margin-bottom:14px; display:flex; align-items:center; gap:7px; }
-        .c-title .material-icons { font-size:17px; color:var(--text-secondary); }
-        .c-wrap { position:relative; height:270px; }
-        .c-wrap.tall { height:310px; }
-        .c-legend { margin-top:14px; display:flex; flex-direction:column; gap:9px; }
-        .c-leg-item { display:flex; justify-content:space-between; align-items:center; font-size:12.5px; }
-        .c-leg-l { display:flex; align-items:center; gap:7px; }
-        .c-dot { width:11px; height:11px; border-radius:50%; flex-shrink:0; }
-        .c-leg-v { font-weight:600; color:var(--text-secondary); }
+        .chart-card { background:var(--bg-white); border-radius:11px; padding:20px; border:1px solid var(--border); }
         .tbl-card { background:var(--bg-white); border-radius:11px; padding:20px; border:1px solid var(--border); box-shadow:var(--shadow-sm); }
-        .tbl-toolbar { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:14px; }
-        .tbl-meta { font-size:11.5px; color:var(--text-secondary); margin-top:3px; }
-        .tbl-filters { display:flex; gap:8px; flex-wrap:wrap; flex:1; }
-        .s-in { flex:1; min-width:170px; padding:8px 12px; border:1px solid var(--border); border-radius:7px; font-size:12.5px; font-family:inherit; }
-        .s-in:focus { outline:none; border-color:var(--primary); }
-        .f-sel { padding:8px 12px; border:1px solid var(--border); border-radius:7px; font-size:12.5px; font-family:inherit; background:#fff; cursor:pointer; min-width:140px; }
-        .f-sel:focus { outline:none; border-color:var(--primary); }
         .tbl-wrap { overflow-x:auto; }
         table { width:100%; border-collapse:collapse; }
-        thead { background:var(--bg-main); }
-        th { padding:9px 13px; text-align:left; font-size:10.5px; font-weight:700; color:var(--text-secondary); text-transform:uppercase; letter-spacing:.5px; border-bottom:2px solid var(--border); cursor:pointer; white-space:nowrap; user-select:none; }
-        th:hover { background:var(--primary-light); color:var(--primary); }
+        th { padding:9px 13px; text-align:left; font-size:10.5px; font-weight:700; color:var(--text-secondary); text-transform:uppercase; border-bottom:2px solid var(--border); cursor:pointer; }
         td { padding:11px 13px; font-size:12.5px; border-bottom:1px solid var(--border); }
-        tbody tr:hover { background:var(--bg-main); }
-        tbody tr:last-child td { border-bottom:none; }
-        .nc { font-size:11px; color:var(--text-secondary); max-width:200px; line-height:1.4; }
-        .empty { text-align:center; padding:32px; color:var(--text-secondary); }
-        .empty .material-icons { font-size:36px; display:block; margin-bottom:8px; opacity:.35; }
         .badge { display:inline-flex; align-items:center; padding:2px 8px; border-radius:9px; font-size:10.5px; font-weight:700; text-transform:uppercase; }
         .b-cur { background:rgba(16,185,129,.1); color:var(--success); }
         .b-res { background:rgba(59,130,246,.1); color:var(--info); }
-        .b-for { background:rgba(245,158,11,.1); color:var(--warning); }
         .b-del { background:rgba(245,158,11,.15); color:#D97706; }
         .b-def { background:rgba(239,68,68,.1); color:var(--error); }
         .b-paid { background:rgba(16,185,129,.08); color:#059669; }
-        .b-act { background:rgba(11,95,109,.1); color:var(--primary); }
         .itag { display:inline-block; padding:2px 7px; border-radius:5px; font-size:10.5px; font-weight:700; }
         .i-debt { background:rgba(11,95,109,.1); color:var(--primary); }
         .i-eq { background:rgba(245,166,35,.15); color:#B45309; }
-        .i-mix { background:var(--purple-light); color:var(--purple); }
-        .csv-box { background:var(--bg-main); border-radius:7px; padding:12px 14px; margin-bottom:10px; }
-        .csv-box.d { border-left:3px solid var(--primary); }
-        .csv-box.e { border-left:3px solid var(--secondary); }
-        .csv-box.k { border-left:3px solid var(--purple); }
-        .csv-box h4 { font-size:12.5px; font-weight:600; margin-bottom:5px; }
-        .csv-box.d h4 { color:var(--primary); }
-        .csv-box.e h4 { color:var(--secondary); }
-        .csv-box.k h4 { color:var(--purple); }
-        .csv-box code { font-size:10.5px; color:var(--text-secondary); display:block; line-height:1.8; font-family:monospace; }
-        .up-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
-        .up-card { background:var(--bg-white); border-radius:11px; padding:18px; border:1px solid var(--border); }
-        .up-card .c-title { margin-bottom:10px; }
-        .up-card p { font-size:12px; color:var(--text-secondary); margin-bottom:12px; }
-        .up-card-btn { display:flex; align-items:center; justify-content:center; gap:7px; padding:10px; border:1px dashed var(--border); border-radius:7px; cursor:pointer; font-size:12px; color:var(--text-secondary); background:var(--bg-main); width:100%; transition:all .2s; }
-        .up-card-btn:hover { border-color:var(--primary); color:var(--primary); background:var(--primary-light); }
-        .up-card-btn input { display:none; }
-        .toast { position:fixed; bottom:22px; right:22px; background:#1F2937; color:#fff; padding:10px 18px; border-radius:9px; font-size:12.5px; z-index:9999; display:none; align-items:center; gap:9px; box-shadow:0 8px 24px rgba(0,0,0,.2); }
-        .toast.show { display:flex; animation:su .3s ease; }
-        @keyframes su { from{transform:translateY(16px);opacity:0} to{transform:translateY(0);opacity:1} }
-        @media(max-width:768px) {
-            .sidebar{transform:translateX(-100%);} .sidebar.open{transform:translateX(0);}
-            .main-content{margin-left:0;} .menu-toggle{display:block;}
-            .kpi-grid,.kpi-grid-sm{grid-template-columns:1fr 1fr;} .chart-row{grid-template-columns:1fr;}
-        }
-        @media(max-width:480px){
-            .content{padding:12px;} .kpi-grid,.kpi-grid-sm{grid-template-columns:1fr;} .kpi-val{font-size:21px;}
-        }
+        .detail-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; padding-bottom:16px; border-bottom:1px solid var(--border); }
+        .detail-meta { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px; margin-bottom:24px; }
+        .clickable-name { color:var(--primary); font-weight:600; text-decoration:none; cursor:pointer; }
+        .clickable-name:hover { text-decoration:underline; }
     </style>
 </head>
 <body>
-
-    <!-- Password Protection Screen -->
-<div id="passwordScreen" style="position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#0B5F6D,#128495);display:flex;align-items:center;justify-content:center;z-index:99999;">
-  <div style="background:white;padding:40px;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,0.3);text-align:center;max-width:400px;">
-    <h2 style="color:#0B5F6D;margin-bottom:10px;font-family:'Inter',sans-serif;">ICA Portfolio Dashboard</h2>
-    <p style="color:#6B7280;margin-bottom:30px;font-size:14px;">Please enter password to continue</p>
-    <input type="password" id="passwordInput" placeholder="Enter password" style="width:100%;padding:12px;border:2px solid #E5E7EB;border-radius:8px;font-size:16px;margin-bottom:15px;box-sizing:border-box;" />
-    <button onclick="checkPassword()" style="width:100%;padding:12px;background:#0B5F6D;color:white;border:none;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer;">Unlock Dashboard</button>
-    <p id="errorMsg" style="color:#EF4444;margin-top:15px;font-size:13px;display:none;">Incorrect password. Please try again.</p>
-  </div>
-</div>
-<script>
-  // Set your password here (change 'ica2026' to your desired password)
-  const correctPassword = 'ica2026';
-  
-  function checkPassword() {
-    const input = document.getElementById('passwordInput');
-    const error = document.getElementById('errorMsg');
-    if (input.value === correctPassword) {
-      document.getElementById('passwordScreen').style.display = 'none';
-      sessionStorage.setItem('dashboardAccess', 'granted');
-    } else {
-      error.style.display = 'block';
-      input.value = '';
-      input.focus();
-    }
-  }
-  
-  // Allow Enter key to submit
-  document.getElementById('passwordInput').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') checkPassword();
-  });
-  
-  // Check if already authenticated in this session
-  if (sessionStorage.getItem('dashboardAccess') === 'granted') {
-    document.getElementById('passwordScreen').style.display = 'none';
-  }
-</script>
-
-<div class="app-container">
-
-<!-- SIDEBAR -->
-<aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-        <div class="logo">
-            <span class="material-icons">account_balance</span>
-            <div><div>ICA Portfolio</div><div class="logo-sub">Management Dashboard</div></div>
+    <div id="passwordScreen" style="position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#0B5F6D,#128495);display:flex;align-items:center;justify-content:center;z-index:99999;">
+        <div style="background:white;padding:40px;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,0.3);text-align:center;max-width:400px;">
+            <h2 style="color:#0B5F6D;margin-bottom:10px;">ICA Portfolio Dashboard</h2>
+            <p style="color:#6B7280;margin-bottom:30px;font-size:14px;">Please enter password to continue</p>
+            <input type="password" id="passwordInput" placeholder="Enter password" style="width:100%;padding:12px;border:2px solid #E5E7EB;border-radius:8px;margin-bottom:15px;" />
+            <button onclick="checkPassword()" style="width:100%;padding:12px;background:#0B5F6D;color:white;border:none;border-radius:8px;font-weight:600;">Unlock Dashboard</button>
         </div>
     </div>
-    <div class="nav-label">Navigation</div>
-    <a class="nav-item active" data-sec="overview" href="#"><span class="material-icons">dashboard</span><span>Overview</span></a>
-    <a class="nav-item" data-sec="debt" href="#"><span class="material-icons">payments</span><span>Debt Portfolio</span><span class="nav-badge" id="nb-debt">—</span></a>
-    <a class="nav-item" data-sec="equity" href="#"><span class="material-icons">trending_up</span><span>Equity Portfolio</span><span class="nav-badge" id="nb-eq">—</span></a>
-    <a class="nav-item" data-sec="import" href="#"><span class="material-icons">upload_file</span><span>Import / Update Data</span></a>
-    <hr class="nav-hr">
-    <div class="quick-upload">
-        <span class="qu-label">Quick Upload</span>
-        <label class="qu-btn"><span class="material-icons" style="color:var(--primary)">table_chart</span>
-            <div><div style="font-weight:600;color:var(--text-primary);font-size:12px">NR Rollforward</div><div>Debt Portfolio CSV</div></div>
-            <input type="file" accept=".csv" id="fi-debt"></label>
-        <div class="qu-status" id="fs-debt"></div>
-        <label class="qu-btn"><span class="material-icons" style="color:var(--secondary)">auto_graph</span>
-            <div><div style="font-weight:600;color:var(--text-primary);font-size:12px">Equity Companies</div><div>Equity Portfolio CSV</div></div>
-            <input type="file" accept=".csv" id="fi-eq"></label>
-        <div class="qu-status" id="fs-eq"></div>
-        <label class="qu-btn"><span class="material-icons" style="color:var(--purple)">bar_chart</span>
-            <div><div style="font-weight:600;color:var(--text-primary);font-size:12px">KPI Summary</div><div>Top-level metrics CSV</div></div>
-            <input type="file" accept=".csv" id="fi-kpi"></label>
-        <div class="qu-status" id="fs-kpi"></div>
-    </div>
-</aside>
-
-<!-- MAIN -->
-<main class="main-content" id="mainContent">
-    <div class="top-bar">
-        <button class="menu-toggle" id="menuToggle"><span class="material-icons">menu</span></button>
-        <span class="top-title">ICA Portfolio Dashboard</span>
-        <div class="top-right">
-            <span class="as-of" id="asOf">As of: 2026-01-31</span>
-            <button class="btn btn-o" id="exportBtn"><span class="material-icons" style="font-size:15px">download</span>Export</button>
-            <button class="btn btn-p" id="refreshBtn"><span class="material-icons" style="font-size:15px">refresh</span>Refresh</button>
-        </div>
-    </div>
-
-    <div class="content">
-        <div class="banner" id="banner">
-            <span class="material-icons">info</span>
-            <span id="bannerTxt"><strong>Demo mode:</strong> Showing built-in data. Upload CSV files via sidebar or <a href="#" id="goImport" style="color:var(--primary)">Import tab</a> to load live data.</span>
-        </div>
-
-        <!-- OVERVIEW -->
-        <div class="sec-block" id="section-overview">
-            <div class="sec-div ov">
-                <span class="material-icons sec-icon ov">dashboard</span>
-                <div><div class="sec-title">Portfolio Overview</div><div class="sec-sub">Single source of truth for ICA capital, exposure, and loan performance</div></div>
-            </div>
-            <div class="kpi-grid" id="kpiPrimary"></div>
-            <div class="kpi-grid-sm" id="kpiSecondary"></div>
-            <div class="chart-row">
-                <div class="chart-card">
-                    <div class="c-title"><span class="material-icons">donut_large</span>Vertical Exposure</div>
-                    <div class="c-wrap"><canvas id="cVert"></canvas></div>
-                    <div class="c-legend" id="cVertLeg"></div>
-                </div>
-                <div class="chart-card">
-                    <div class="c-title"><span class="material-icons">bar_chart</span>Top 10 Capital Deployments</div>
-                    <div class="c-wrap"><canvas id="cDeploy"></canvas></div>
-                </div>
-            </div>
-            <div class="chart-card full">
-                <div class="c-title"><span class="material-icons">category</span>Capital Instrument Mix
-                    <span style="margin-left:10px;font-size:11px;font-weight:400;color:var(--text-secondary)">
-                        <span style="display:inline-block;width:10px;height:10px;background:#0B5F6D;border-radius:2px;margin-right:3px;vertical-align:middle"></span>Debt &nbsp;
-                        <span style="display:inline-block;width:10px;height:10px;background:#F5A623;border-radius:2px;margin-right:3px;vertical-align:middle"></span>Equity/Quasi-Equity
-                    </span>
-                </div>
-                <div class="c-wrap tall"><canvas id="cInst"></canvas></div>
-            </div>
-        </div>
-
-        <!-- DEBT -->
-        <div class="sec-block" id="section-debt">
-            <div class="sec-div db">
-                <span class="material-icons sec-icon db">payments</span>
-                <div><div class="sec-title">Debt Portfolio</div><div class="sec-sub" id="debtSub">Active loan instruments — sourced from NR Rollforward</div></div>
-            </div>
-            <div class="tbl-card">
-                <div class="tbl-toolbar">
-                    <div><div class="c-title" style="margin-bottom:2px">Active Loans &amp; Borrower Performance</div><div class="tbl-meta" id="debtMeta"></div></div>
-                    <div class="tbl-filters">
-                        <input class="s-in" id="debtSearch" placeholder="Search borrower or vertical…">
-                        <select class="f-sel" id="debtStatus">
-                            <option value="all">All Statuses</option>
-                            <option value="current">Current</option>
-                            <option value="restructured">Restructured</option>
-                            <option value="forbearance">Forbearance</option>
-                            <option value="delinquent">Delinquent</option>
-                            <option value="default">Default</option>
-                        </select>
-                        <select class="f-sel" id="debtVert"><option value="all">All Verticals</option></select>
+    <script>
+        const correctPassword = 'ica2026';
+        function checkPassword() {
+            if (document.getElementById('passwordInput').value === correctPassword) {
+                document.getElementById('passwordScreen').style.display = 'none';
+                sessionStorage.setItem('dashboardAccess', 'granted');
+            }
+        }
+        if (sessionStorage.getItem('dashboardAccess') === 'granted') document.getElementById('passwordScreen').style.display = 'none';
+    </script>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><div class="logo"><span class="material-icons">account_balance</span><div><div>ICA Portfolio</div><div class="logo-sub">Management Dashboard</div></div></div></div>
+            <div class="nav-label">Navigation</div>
+            <a class="nav-item active" onclick="showSection('overview')"><span class="material-icons">dashboard</span><span>Overview</span></a>
+            <a class="nav-item" onclick="showSection('debt')"><span class="material-icons">payments</span><span>Debt Portfolio</span><span class="nav-badge" id="nb-debt">0</span></a>
+            <a class="nav-item" onclick="showSection('equity')"><span class="material-icons">trending_up</span><span>Equity Portfolio</span><span class="nav-badge" id="nb-eq">0</span></a>
+        </aside>
+        <main class="main-content">
+            <div class="top-bar"><span class="top-title">ICA Portfolio Dashboard</span><div class="top-right"><span class="as-of">As of: 2026-01-31</span></div></div>
+            <div class="content">
+                <div id="section-overview" class="sec-block">
+                    <div class="sec-div ov"><span class="material-icons sec-icon ov">dashboard</span><div class="sec-title">Portfolio Overview</div></div>
+                    <div class="kpi-grid" id="kpiGrid"></div>
+                    <div class="chart-row">
+                        <div class="chart-card"><div class="c-title">Vertical Exposure</div><canvas id="cVert"></canvas></div>
+                        <div class="chart-card"><div class="c-title">Top Capital Deployments</div><canvas id="cDeploy"></canvas></div>
                     </div>
                 </div>
-                <div class="tbl-wrap">
-                    <table><thead><tr>
-                        <th data-s="name" data-t="debt">Company ↕</th>
-                        <th data-s="vertical" data-t="debt">Vertical ↕</th>
-                        <th data-s="capitalDeployed" data-t="debt">Capital Deployed ↕</th>
-                        <th data-s="loanOutstanding" data-t="debt">Loan Outstanding ↕</th>
-                        <th data-s="interestRate" data-t="debt">Rate ↕</th>
-                        <th data-s="instrumentType" data-t="debt">Instrument ↕</th>
-                        <th data-s="status" data-t="debt">Status ↕</th>
-                        <th>Notes</th>
-                    </tr></thead>
-                    <tbody id="debtBody"></tbody></table>
+                <div id="section-debt" class="sec-block" style="display:none">
+                    <div class="sec-div db"><span class="material-icons sec-icon db">payments</span><div class="sec-title">Debt Portfolio</div></div>
+                    <div class="tbl-card"><div class="tbl-wrap"><table><thead><tr><th>Company</th><th>Vertical</th><th>Deployed</th><th>Outstanding</th><th>Rate</th><th>Status</th></tr></thead><tbody id="debtBody"></tbody></table></div></div>
+                </div>
+                <div id="section-equity" class="sec-block" style="display:none">
+                    <div class="sec-div eq"><span class="material-icons sec-icon eq">trending_up</span><div class="sec-title">Equity Portfolio</div></div>
+                    <div class="tbl-card"><div class="tbl-wrap"><table><thead><tr><th>Company</th><th>Instrument</th><th>Vintage</th><th>Vertical</th></tr></thead><tbody id="eqBody"></tbody></table></div></div>
+                </div>
+                <div id="section-detail" class="sec-block" style="display:none">
+                    <button class="btn btn-o" onclick="hideDetail()" style="margin-bottom:20px"><span class="material-icons">arrow_back</span>Back</button>
+                    <div class="detail-header"><div><h2 id="detName"></h2><div id="detVert"></div></div></div>
+                    <div class="detail-meta" id="detMeta"></div>
+                    <div id="detPayments" style="margin-top:20px"><h3 style="font-size:16px;margin-bottom:10px">Payment History</h3><div class="tbl-card"><div class="tbl-wrap"><table><thead><tr><th>Date</th><th>Principal</th><th>Interest</th><th>Total</th><th>Status</th></tr></thead><tbody id="payBody"></tbody></table></div></div></div>
+                    <div id="detActuals" style="margin-top:20px"><h3 style="font-size:16px;margin-bottom:10px">Actual Performance</h3><div class="tbl-card"><div class="tbl-wrap"><table><thead><tr><th>Period</th><th>Revenue</th><th>Gross Profit</th></tr></thead><tbody id="perfBody"></tbody></table></div></div></div>
                 </div>
             </div>
-        </div>
-
-        <!-- EQUITY -->
-        <div class="sec-block" id="section-equity">
-            <div class="sec-div eq">
-                <span class="material-icons sec-icon eq">trending_up</span>
-                <div><div class="sec-title">Equity &amp; Quasi-Equity Portfolio</div><div class="sec-sub" id="eqSub">SAFE, SEED, Impact Notes, Conv. Notes, Equity, RRLF (paid-off)</div></div>
-            </div>
-            <div class="tbl-card">
-                <div class="tbl-toolbar">
-                    <div><div class="c-title" style="margin-bottom:2px">Equity &amp; Quasi-Equity Portfolio</div><div class="tbl-meta" id="eqMeta"></div></div>
-                    <div class="tbl-filters">
-                        <input class="s-in" id="eqSearch" placeholder="Search company or vertical…">
-                        <select class="f-sel" id="eqInst"><option value="all">All Instruments</option></select>
-                        <select class="f-sel" id="eqVert"><option value="all">All Verticals</option></select>
-                        <select class="f-sel" id="eqRrlf">
-                            <option value="all">All RRLF</option>
-                            <option value="paid">RRLF Paid Off</option>
-                            <option value="active">RRLF Active</option>
-                            <option value="non-rrlf">Non-RRLF Only</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="tbl-wrap">
-                    <table><thead><tr>
-                        <th data-s="name" data-t="equity">Company ↕</th>
-                        <th data-s="instrumentType" data-t="equity">Instrument ↕</th>
-                        <th data-s="vintageYear" data-t="equity">Vintage ↕</th>
-                        <th data-s="vertical" data-t="equity">Vertical ↕</th>
-                        <th>Capital Type</th>
-                        <th>Notes</th>
-                    </tr></thead>
-                    <tbody id="eqBody"></tbody></table>
-                </div>
-            </div>
-        </div>
-
-        <!-- IMPORT -->
-        <div class="sec-block" id="section-import" style="display:none">
-            <div class="sec-div im">
-                <span class="material-icons sec-icon im">upload_file</span>
-                <div><div class="sec-title">Import &amp; Update Data</div><div class="sec-sub">Upload CSV exports — no code changes required, ever</div></div>
-            </div>
-            <div class="tbl-card" style="margin-bottom:16px">
-                <h3 style="font-size:14px;font-weight:600;margin-bottom:12px;display:flex;align-items:center;gap:7px">
-                    <span class="material-icons" style="font-size:17px;color:var(--primary)">description</span>Required CSV Column Headers
-                </h3>
-                <div class="csv-box d"><h4>📊 debt_portfolio.csv — NR Rollforward</h4>
-                    <code>name, vertical, capitalDeployed, loanOutstanding, interestRate, instrumentType, status, notes</code>
-                    <code style="color:#9CA3AF;margin-top:4px">status: current | restructured | forbearance | delinquent | default</code>
-                </div>
-                <div class="csv-box e"><h4>📈 equity_portfolio.csv — Equity &amp; Quasi-Equity</h4>
-                    <code>name, instrumentType, vintageYear, vertical, notes, rrlf_status</code>
-                    <code style="color:#9CA3AF;margin-top:4px">rrlf_status: active | paid | (blank for non-RRLF)</code>
-                </div>
-                <div class="csv-box k"><h4>📋 kpi_summary.csv — Top-Level KPI Override (optional)</h4>
-                    <code>totalCapitalDeployed, portfolioCompanies, notesReceivableBalance, activeLoans, activeInstruments, activeBorrowers, asOfDate</code>
-                </div>
-                <div style="margin-top:12px;padding:10px 14px;background:rgba(59,130,246,.06);border-radius:7px;font-size:12px;color:var(--text-secondary)">
-                    <strong style="color:var(--text-primary)">💡 Tip:</strong> In Google Sheets: File → Download → Comma-separated values (.csv). Column names are case-insensitive; extra columns are ignored.
-                </div>
-            </div>
-            <div class="up-cards">
-                <div class="up-card">
-                    <div class="c-title"><span class="material-icons" style="color:var(--primary)">table_chart</span>NR Rollforward (Debt)</div>
-                    <p>Upload your NR Rollforward CSV to update all debt rows, balances, rates, and statuses.</p>
-                    <label class="up-card-btn"><span class="material-icons">upload</span>Choose debt_portfolio.csv<input type="file" accept=".csv" id="fi-debt2"></label>
-                    <div class="qu-status" id="fs-debt2" style="margin-top:7px;text-align:center"></div>
-                </div>
-                <div class="up-card">
-                    <div class="c-title"><span class="material-icons" style="color:var(--secondary)">auto_graph</span>Equity Companies</div>
-                    <p>Upload your equity portfolio CSV to update all SAFE, SEED, Impact Note, RRLF, and Conv. Note positions.</p>
-                    <label class="up-card-btn"><span class="material-icons">upload</span>Choose equity_portfolio.csv<input type="file" accept=".csv" id="fi-eq2"></label>
-                    <div class="qu-status" id="fs-eq2" style="margin-top:7px;text-align:center"></div>
-                </div>
-                <div class="up-card">
-                    <div class="c-title"><span class="material-icons" style="color:var(--purple)">bar_chart</span>KPI Summary (optional)</div>
-                    <p>One-row CSV to pin QB-reconciled figures like the exact NR balance tied to GL account 1410.</p>
-                    <label class="up-card-btn"><span class="material-icons">upload</span>Choose kpi_summary.csv<input type="file" accept=".csv" id="fi-kpi2"></label>
-                    <div class="qu-status" id="fs-kpi2" style="margin-top:7px;text-align:center"></div>
-                </div>
-            </div>
-        </div>
-
+        </main>
     </div>
-</main>
-</div>
-
-<div class="toast" id="toast"><span class="material-icons" style="font-size:17px">check_circle</span><span id="toastMsg"></span></div>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<script>
-// ═══════════════════════════════════════════
-// DEFAULT / DEMO DATA
-// ═══════════════════════════════════════════
-const D_DEBT = [
-    {name:'Progeny Coffee',vertical:'Beverage',capitalDeployed:353000,loanOutstanding:353000,interestRate:'5%',instrumentType:'Conv. Note + WCL (x2)',status:'delinquent',notes:'3 instruments: Conv. Note $325k + WCL $15k + WCL $13k'},
-    {name:'Courtsmith',vertical:'Professional Services',capitalDeployed:844000,loanOutstanding:303128,interestRate:'6%/8%',instrumentType:'WCL + Acq. Financing',status:'current',notes:'2 instruments: WCL $19,623 + Acq. Financing $283,504'},
-    {name:'Global Grub',vertical:'CPG',capitalDeployed:182105,loanOutstanding:148333,interestRate:'5%',instrumentType:'Conv. Note',status:'restructured',notes:''},
-    {name:'madeBos',vertical:'Professional Services',capitalDeployed:117868,loanOutstanding:93000,interestRate:'6%',instrumentType:'Conv. Note',status:'delinquent',notes:''},
-    {name:'Goal Five',vertical:'Beauty & Apparel',capitalDeployed:974000,loanOutstanding:410000,interestRate:'2%/6%',instrumentType:'Conv. Note + WCL',status:'forbearance',notes:'2 instruments: Conv. Note $374k + WCL $36k'},
-    {name:'Renewal Mill',vertical:'CPG',capitalDeployed:600000,loanOutstanding:33808,interestRate:'5%',instrumentType:'WCL',status:'current',notes:''},
-    {name:"Cupcakin'",vertical:'CPG',capitalDeployed:652000,loanOutstanding:31949,interestRate:'6%',instrumentType:'WCL',status:'delinquent',notes:''},
-    {name:'Renegade Running',vertical:'CPG',capitalDeployed:40000,loanOutstanding:39597,interestRate:'6%',instrumentType:'WCL',status:'restructured',notes:''},
-    {name:'Dokkaebier',vertical:'Beverage',capitalDeployed:39244,loanOutstanding:37500,interestRate:'6%',instrumentType:'WCL',status:'default',notes:''},
-    {name:'Bold Construction Group',vertical:'Professional Services',capitalDeployed:32000,loanOutstanding:20000,interestRate:'6%',instrumentType:'WCL',status:'current',notes:''},
-    {name:'BerryClean',vertical:'Professional Services',capitalDeployed:250000,loanOutstanding:250000,interestRate:'8%',instrumentType:'Loan (8%)',status:'current',notes:''},
-    {name:'Rainbow Chefs',vertical:'CPG',capitalDeployed:250000,loanOutstanding:250000,interestRate:'8%',instrumentType:'Loan (8%)',status:'current',notes:''},
-    {name:'Squid iQ',vertical:'CPG',capitalDeployed:250000,loanOutstanding:250000,interestRate:'15%',instrumentType:'Loan (15%)',status:'current',notes:''}
-];
-const D_EQ = [
-    {name:'Abzz Snacks, Inc',instrumentType:'RRLF',vintageYear:2020,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'Alkali Rye Beverage',instrumentType:'RRLF',vintageYear:2022,vertical:'Beverage',notes:'',rrlf_status:'paid'},
-    {name:"Annie's T Cakes",instrumentType:'Impact Note 1.0',vintageYear:2023,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Avocurl',instrumentType:'SEED',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Back to the Roots',instrumentType:'Conv. Note + Equity',vintageYear:2021,vertical:'CPG',notes:'Also has active debt',rrlf_status:''},
-    {name:'Bad Walters',instrumentType:'Conv. Note',vintageYear:2024,vertical:'Beverage',notes:'',rrlf_status:''},
-    {name:'Bakesum',instrumentType:'Impact Note 1.0',vintageYear:2023,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Barr Necessities',instrumentType:'SAFE',vintageYear:2022,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:'Blue Yonder Brands',instrumentType:'Impact Note 2.0',vintageYear:2024,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'BTR Nation',instrumentType:'SAFE',vintageYear:2024,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Brash',instrumentType:'SEED',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Charlotte Truffles',instrumentType:'SEED',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Crooked City Cider',instrumentType:'RRLF',vintageYear:2020,vertical:'Beverage',notes:'',rrlf_status:'paid'},
-    {name:"Delane's Natural Nails",instrumentType:'RRLF',vintageYear:2020,vertical:'Professional Services',notes:'',rrlf_status:'paid'},
-    {name:'Delicious, Inc.',instrumentType:'RRLF',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'Diaspora Spice',instrumentType:'SAFE',vintageYear:2024,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Don Bugito',instrumentType:'SAFE',vintageYear:2020,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'Down to Cook',instrumentType:'Impact Note 1.0',vintageYear:2022,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'East Brothers Beer',instrumentType:'Impact Note 1.0',vintageYear:2023,vertical:'Beverage',notes:'',rrlf_status:''},
-    {name:'ElectroSpit',instrumentType:'Impact Note 1.0',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Evolve Oakland',instrumentType:'RRLF',vintageYear:2020,vertical:'Professional Services',notes:'',rrlf_status:'paid'},
-    {name:'Firebrand',instrumentType:'Equity + SAFE',vintageYear:2021,vertical:'CPG',notes:'Also has active debt',rrlf_status:''},
-    {name:'Fonda Technologies',instrumentType:'Equity',vintageYear:2024,vertical:'Tech',notes:'',rrlf_status:''},
-    {name:'Future N Focus',instrumentType:'Impact Note 1.0',vintageYear:2022,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'GDS Cloth Goods',instrumentType:'SEED',vintageYear:2021,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:'Gelateria Naia',instrumentType:'RRLF',vintageYear:2020,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'GloGirl Cosmetics',instrumentType:'SEED',vintageYear:2021,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:'Happy Moose Juice',instrumentType:'Impact Note 1.0',vintageYear:2023,vertical:'Beverage',notes:'',rrlf_status:''},
-    {name:'House of Coffee, Inc',instrumentType:'RRLF',vintageYear:2020,vertical:'Beverage',notes:'',rrlf_status:'paid'},
-    {name:'Hub',instrumentType:'Conv. Note',vintageYear:2013,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:"Javi's Cooking",instrumentType:'RRLF',vintageYear:2020,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'Just Date Inc',instrumentType:'SAFE',vintageYear:2024,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Mahogany & Oak',instrumentType:'Impact Note 1.0',vintageYear:2023,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:'Maker Studio Kids',instrumentType:'SEED',vintageYear:2021,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:'Masa Y Mas',instrumentType:'Impact Note 1.0',vintageYear:2022,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'McWoods Distribution',instrumentType:'RRLF',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'Minnie Bells Soul Music',instrumentType:'RRLF',vintageYear:2020,vertical:'Professional Services',notes:'',rrlf_status:'paid'},
-    {name:'MIZO, Inc',instrumentType:'Impact Note 1.0',vintageYear:2024,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Negozee',instrumentType:'Impact Note 1.0',vintageYear:2023,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:"Neyborly - Poet's Corner",instrumentType:'RRLF',vintageYear:2020,vertical:'Professional Services',notes:'',rrlf_status:'paid'},
-    {name:'Nirvana Soul',instrumentType:'Impact Note 1.0',vintageYear:2024,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:'Oakstop',instrumentType:'RRLF',vintageYear:2020,vertical:'Professional Services',notes:'',rrlf_status:'paid'},
-    {name:'Onigilly',instrumentType:'Conv. Note',vintageYear:2018,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'OWB Holdings, Inc',instrumentType:'Impact Note 1.0',vintageYear:2024,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:'Oyna Natural Foods',instrumentType:'Impact Note 2.0',vintageYear:2024,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Peaches Patties LLC',instrumentType:'RRLF',vintageYear:2020,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'P. Harrell Wines',instrumentType:'Impact Note 1.0',vintageYear:2022,vertical:'Beverage',notes:'',rrlf_status:''},
-    {name:'Pezzy Pets / Acari Lab',instrumentType:'Impact Note 1.0',vintageYear:2024,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Phlex65',instrumentType:'Impact Note 2.0',vintageYear:2025,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Pietisserie',instrumentType:'Impact Note 1.0',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Pillar Cowork',instrumentType:'Impact Note 2.0',vintageYear:2025,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:'Pilotly',instrumentType:'SAFE',vintageYear:2022,vertical:'Tech',notes:'',rrlf_status:''},
-    {name:'Projo',instrumentType:'Impact Note 1.0',vintageYear:2023,vertical:'Tech',notes:'',rrlf_status:''},
-    {name:'Puretergent',instrumentType:'RRLF',vintageYear:2020,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'Red Bay Coffee',instrumentType:'Conv. Note + Equity',vintageYear:2020,vertical:'Beverage',notes:'Also has active debt',rrlf_status:''},
-    {name:"Reem's",instrumentType:'RRLF',vintageYear:2020,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'Rize Up Bakery',instrumentType:'Impact Note 2.0',vintageYear:2023,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Robasciotti & Philips',instrumentType:'RRLF',vintageYear:2020,vertical:'Professional Services',notes:'',rrlf_status:'paid'},
-    {name:'Rockridge',instrumentType:'Impact Note 1.0',vintageYear:2022,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Rubia Coffee',instrumentType:'Impact Note 1.0',vintageYear:2023,vertical:'Beverage',notes:'',rrlf_status:''},
-    {name:'Scenic Made',instrumentType:'Impact Note 1.0',vintageYear:2022,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:'School Caterers',instrumentType:'RRLF',vintageYear:2020,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'Skincare by Felecia',instrumentType:'RRLF',vintageYear:2020,vertical:'Professional Services',notes:'',rrlf_status:'paid'},
-    {name:'Something Better Foods',instrumentType:'Conv. Note',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Soturi Fitness',instrumentType:'SEED',vintageYear:2022,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:'Souperb, LLC',instrumentType:'RRLF',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'Squeaky Green',instrumentType:'SEED',vintageYear:2022,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Teas With Meaning',instrumentType:'SEED',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:"That's My Jam",instrumentType:'Impact Note 1.0',vintageYear:2023,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'The Damel Food Truck',instrumentType:'RRLF',vintageYear:2020,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'The Final Sauce',instrumentType:'SEED',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'The Town Kitchen',instrumentType:'RRLF',vintageYear:2020,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'The Weekend Store',instrumentType:'SEED',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Well Kept Pets',instrumentType:'Impact Note 1.0',vintageYear:2022,vertical:'CPG',notes:'',rrlf_status:''},
-    {name:'Wisdom Supply',instrumentType:'RRLF',vintageYear:2021,vertical:'CPG',notes:'',rrlf_status:'paid'},
-    {name:'WorkAmerica',instrumentType:'Conv. Note',vintageYear:2015,vertical:'Tech',notes:'',rrlf_status:''},
-    {name:'Ziva Naseer',instrumentType:'Impact Note 1.0',vintageYear:2023,vertical:'Professional Services',notes:'',rrlf_status:''},
-    {name:'Bold Construction Group',instrumentType:'Impact Note 1.0',vintageYear:2022,vertical:'Professional Services',notes:'Also has active loan',rrlf_status:''},
-    {name:"Cupcakin'",instrumentType:'Equity',vintageYear:2023,vertical:'CPG',notes:'Also has active loan',rrlf_status:''},
-    {name:'Renewal Mill',instrumentType:'Equity',vintageYear:2023,vertical:'CPG',notes:'Also has active loan',rrlf_status:''}
-];
-const D_KPI = {totalCapitalDeployed:15822103,portfolioCompanies:91,notesReceivableBalance:2220315.32,activeLoans:17,activeInstruments:17,activeBorrowers:12,asOfDate:'2026-01-31'};
-
-// ═══════════════════════════════════════════
-// STATE
-// ═══════════════════════════════════════════
-let S = {debt:[...D_DEBT],equity:[...D_EQ],kpi:{...D_KPI},ds:{field:'loanOutstanding',order:'desc'},es:{field:'name',order:'asc'},src:'demo'};
-let cV=null,cD=null,cI=null;
-
-// ═══════════════════════════════════════════
-// CSV PARSER
-// ═══════════════════════════════════════════
-function parseCSV(txt){
-    const lines=txt.trim().split('\n').map(l=>l.replace(/\r/g,''));
-    if(lines.length<2)return[];
-    const hdr=lines[0].split(',').map(h=>h.trim().toLowerCase().replace(/[^a-z0-9_]/g,''));
-    return lines.slice(1).map(line=>{
-        const cols=[];let cur='',inQ=false;
-        for(let i=0;i<line.length;i++){if(line[i]==='"'){inQ=!inQ;continue;}if(line[i]===','&&!inQ){cols.push(cur.trim());cur='';continue;}cur+=line[i];}
-        cols.push(cur.trim());
-        const o={};hdr.forEach((h,i)=>{o[h]=cols[i]!==undefined?cols[i]:'';});return o;
-    }).filter(r=>Object.values(r).some(v=>v!==''));
-}
-function nDebt(r){return{name:r.name||'',vertical:r.vertical||'',capitalDeployed:parseFloat((r.capitaldeployed||r.capital_deployed||'0').replace(/[$,]/g,''))||0,loanOutstanding:parseFloat((r.loanoutstanding||r.loan_outstanding||'0').replace(/[$,]/g,''))||0,interestRate:r.interestrate||r.interest_rate||r.rate||'',instrumentType:r.instrumenttype||r.instrument_type||r.instrument||'',status:(r.status||'current').toLowerCase(),notes:r.notes||''};}
-function nEq(r){return{name:r.name||'',instrumentType:r.instrumenttype||r.instrument_type||r.instrument||'',vintageYear:parseInt(r.vintageyear||r.vintage_year||r.vintage||'0')||'',vertical:r.vertical||'',notes:r.notes||'',rrlf_status:(r.rrlf_status||r.rrlfstatus||'').toLowerCase()};}
-function nKpi(r){return{totalCapitalDeployed:parseFloat((r.totalcapitaldeployed||'0').replace(/[$,]/g,''))||S.kpi.totalCapitalDeployed,portfolioCompanies:parseInt(r.portfoliocompanies||'0')||S.kpi.portfolioCompanies,notesReceivableBalance:parseFloat((r.notesreceivablebalance||'0').replace(/[$,]/g,''))||S.kpi.notesReceivableBalance,activeLoans:parseInt(r.activeloans||'0')||S.kpi.activeLoans,activeInstruments:parseInt(r.activeinstruments||'0')||S.kpi.activeInstruments,activeBorrowers:parseInt(r.activeborrowers||'0')||S.kpi.activeBorrowers,asOfDate:r.asofdate||r.as_of_date||S.kpi.asOfDate};}
-
-// ═══════════════════════════════════════════
-// FILE UPLOAD WIRING
-// ═══════════════════════════════════════════
-function wire(ids,cb){
-    ids.forEach(id=>{
-        const el=document.getElementById(id);if(!el)return;
-        el.addEventListener('change',function(e){
-            const f=e.target.files[0];if(!f)return;
-            const r=new FileReader();
-            r.onload=ev=>{try{const rows=parseCSV(ev.target.result);if(!rows.length)throw new Error('No rows found');cb(rows,f.name,id);}catch(err){toast('✗ '+err.message);}};
-            r.readAsText(f);
-        });
-    });
-}
-function setSt(base,msg,ok){['',2].forEach(s=>{const el=document.getElementById('fs-'+base+(s||''));if(el){el.textContent=msg;el.className='qu-status '+(ok?'ok':'err');}});}
-wire(['fi-debt','fi-debt2'],(rows,fname)=>{S.debt=rows.map(nDebt);S.src='csv';setSt('debt',`✓ ${fname} (${rows.length} rows)`,true);refreshAll();toast(`Debt updated — ${rows.length} borrowers from ${fname}`);});
-wire(['fi-eq','fi-eq2'],(rows,fname)=>{S.equity=rows.map(nEq);S.src='csv';setSt('eq',`✓ ${fname} (${rows.length} rows)`,true);refreshAll();toast(`Equity updated — ${rows.length} companies from ${fname}`);});
-wire(['fi-kpi','fi-kpi2'],(rows,fname)=>{if(rows[0])S.kpi=nKpi(rows[0]);S.src='csv';setSt('kpi',`✓ ${fname}`,true);refreshAll();toast(`KPI updated from ${fname}`);});
-
-// ═══════════════════════════════════════════
-// FORMATTERS & BADGES
-// ═══════════════════════════════════════════
-const $f=(v,c=false)=>{if(v==null||v==='')return'—';const n=parseFloat(v);if(isNaN(n))return'—';return'$'+n.toLocaleString('en-US',{minimumFractionDigits:c?2:0,maximumFractionDigits:c?2:0});};
-const sb=s=>{const m={current:'b-cur',restructured:'b-res',forbearance:'b-for',delinquent:'b-del',default:'b-def'};return`<span class="badge ${m[s]||'b-cur'}">${s}</span>`;};
-const itag=t=>{const tl=(t||'').toLowerCase();let c='i-eq';if(['wcl','loan','acquisition','rrlf','conv. note'].some(d=>tl.includes(d)))c='i-debt';if(tl.includes('+')||tl.includes('equity'))c='i-mix';return`<span class="itag ${c}">${t}</span>`;};
-const rrlfB=s=>s==='paid'?`<span class="badge b-paid" style="margin-left:3px">Paid Off</span>`:s==='active'?`<span class="badge b-act" style="margin-left:3px">Active</span>`:'';
-const ctB=row=>{const t=(row.instrumentType||'').toLowerCase();const iD=['rrlf','wcl','loan','conv. note','acquisition'].some(d=>t.includes(d));const iE=['safe','seed','equity','impact note'].some(e=>t.includes(e));if(iD&&iE)return`<span class="badge" style="background:var(--purple-light);color:var(--purple)">Mixed</span>`;if(iD)return`<span class="badge b-act">Debt</span>`;return`<span class="badge" style="background:var(--secondary-light);color:#B45309">Quasi-Eq</span>`;};
-
-// ═══════════════════════════════════════════
-// KPI CARDS
-// ═══════════════════════════════════════════
-function renderKpis(){
-    const k=S.kpi;
-    document.getElementById('kpiPrimary').innerHTML=`
-        <div class="kpi-card tc"><div class="kpi-lbl">Total Capital Deployed</div><div class="kpi-val">${$f(k.totalCapitalDeployed)}</div><div class="kpi-sub">Across ${k.portfolioCompanies} portfolio companies</div></div>
-        <div class="kpi-card tc"><div class="kpi-lbl">Portfolio Companies</div><div class="kpi-val">${k.portfolioCompanies}</div><div class="kpi-sub">Active investments and loans</div></div>
-        <div class="kpi-card ta"><div class="kpi-lbl">Notes Receivable Balance</div><div class="kpi-val">${$f(k.notesReceivableBalance,true)}</div><div class="kpi-sub">Ties to QB 1410 balance</div></div>
-        <div class="kpi-card ta"><div class="kpi-lbl">Active Loans</div><div class="kpi-val">${k.activeInstruments||k.activeLoans}</div><div class="kpi-sub">${k.activeInstruments||k.activeLoans} instruments · ${k.activeBorrowers} borrowers</div></div>`;
-    document.getElementById('kpiSecondary').innerHTML=`
-        <div class="kpi-card tb"><div class="kpi-lbl">Equity Portfolio Cos</div><div class="kpi-val">${S.equity.length}</div><div class="kpi-sub">SAFE, SEED, Impact Note, RRLF</div></div>
-        <div class="kpi-card ta"><div class="kpi-lbl">Debt Portfolio Cos</div><div class="kpi-val">${S.debt.length}</div><div class="kpi-sub">Active loan borrowers</div></div>
-        <div class="kpi-card tc"><div class="kpi-lbl">Instrument Types</div><div class="kpi-val">10</div><div class="kpi-sub">RRLF, SAFE, SEED, Equity, Conv. Note, Impact Notes, WCL, Loan, Acq. Fin.</div></div>`;
-    document.getElementById('nb-debt').textContent=S.debt.length;
-    document.getElementById('nb-eq').textContent=S.equity.length;
-    document.getElementById('asOf').textContent='As of: '+(k.asOfDate||'Demo');
-}
-
-// ═══════════════════════════════════════════
-// CHARTS
-// ═══════════════════════════════════════════
-const VC=['#0B5F6D','#F5A623','#3B82F6','#6B46C1','#10B981','#EF4444'];
-function renderVert(){
-    const vd=S.src==='demo'
-        ?[{label:'CPG',amount:6625365,companies:36,color:VC[0]},{label:'Professional Services',amount:2150000,companies:16,color:VC[1]},{label:'Beverage',amount:2649054,companies:15,color:VC[2]}]
-        :Object.entries(S.debt.reduce((m,r)=>{if(!m[r.vertical])m[r.vertical]={amount:0,c:new Set()};m[r.vertical].amount+=r.capitalDeployed||0;m[r.vertical].c.add(r.name);return m;},{})).map(([k,v],i)=>({label:k,amount:v.amount,companies:v.c.size,color:VC[i%VC.length]}));
-    if(cV)cV.destroy();
-    cV=new Chart(document.getElementById('cVert').getContext('2d'),{type:'doughnut',data:{labels:vd.map(v=>v.label),datasets:[{data:vd.map(v=>v.amount),backgroundColor:vd.map(v=>v.color),borderWidth:0,hoverOffset:5}]},options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>{const i=vd[ctx.dataIndex];return `${i.label}: ${$f(i.amount)} (${i.companies} cos)`;}}}}}});
-    document.getElementById('cVertLeg').innerHTML=vd.map(v=>`<div class="c-leg-item"><div class="c-leg-l"><div class="c-dot" style="background:${v.color}"></div><span>${v.label}</span></div><div class="c-leg-v">${$f(v.amount)} · ${v.companies} cos</div></div>`).join('');
-}
-function renderDeploy(){
-    const top=[...S.debt].sort((a,b)=>b.capitalDeployed-a.capitalDeployed).slice(0,10).reverse();
-    if(cD)cD.destroy();
-    cD=new Chart(document.getElementById('cDeploy').getContext('2d'),{type:'bar',data:{labels:top.map(d=>d.name),datasets:[{data:top.map(d=>d.capitalDeployed),backgroundColor:'#0B5F6D',borderRadius:3}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>$f(ctx.raw)}}},scales:{x:{ticks:{callback:v=>'$'+(v/1000)+'k'}}}}});
-}
-function renderInst(){
-    const DEBT_I=['RRLF','WCL','Loan','Acquisition Financing','Conv. Note'];
-    const map={};
-    const ct=type=>{for(const k of['RRLF','Impact Note 1.0','Impact Note 2.0','SAFE','SEED','Conv. Note','WCL','Equity','Loan','Acquisition Financing']){if((type||'').includes(k)){map[k]=(map[k]||0)+1;return;}}map['Other']=(map['Other']||0)+1;};
-    S.equity.forEach(r=>ct(r.instrumentType));S.debt.forEach(r=>ct(r.instrumentType));
-    const sorted=Object.entries(map).sort((a,b)=>b[1]-a[1]);
-    if(cI)cI.destroy();
-    cI=new Chart(document.getElementById('cInst').getContext('2d'),{type:'bar',data:{labels:sorted.map(([k])=>k),datasets:[{data:sorted.map(([,v])=>v),backgroundColor:sorted.map(([k])=>DEBT_I.some(d=>k.includes(d))?'#0B5F6D':'#F5A623'),borderRadius:3}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>`${ctx.raw} companies`}}},scales:{x:{ticks:{stepSize:4}}}}});
-}
-
-// ═══════════════════════════════════════════
-// TABLES
-// ═══════════════════════════════════════════
-function fillDebtFilters(){const v=[...new Set(S.debt.map(r=>r.vertical))].sort();document.getElementById('debtVert').innerHTML='<option value="all">All Verticals</option>'+v.map(x=>`<option value="${x}">${x}</option>`).join('');}
-function renderDebt(){
-    const q=document.getElementById('debtSearch').value.toLowerCase(),st=document.getElementById('debtStatus').value,vt=document.getElementById('debtVert').value,{field,order}=S.ds;
-    let rows=S.debt.filter(r=>(r.name.toLowerCase().includes(q)||r.vertical.toLowerCase().includes(q))&&(st==='all'||r.status===st)&&(vt==='all'||r.vertical===vt)).sort((a,b)=>{let av=a[field],bv=b[field];if(av==null)return 1;if(bv==null)return -1;if(typeof av==='string')return order==='asc'?av.localeCompare(bv):bv.localeCompare(av);return order==='asc'?av-bv:bv-av;});
-    document.getElementById('debtMeta').textContent=`Showing ${rows.length} of ${S.debt.length} borrowers`;
-    document.getElementById('debtSub').textContent=`${S.debt.length} active borrowers — NR Rollforward as of ${S.kpi.asOfDate||'latest'}`;
-    const tb=document.getElementById('debtBody');
-    if(!rows.length){tb.innerHTML=`<tr><td colspan="8" class="empty"><span class="material-icons">search_off</span>No borrowers match filters</td></tr>`;return;}
-    tb.innerHTML=rows.map(r=>`<tr><td><strong>${r.name}</strong></td><td>${r.vertical}</td><td>${$f(r.capitalDeployed)}</td><td><strong>${$f(r.loanOutstanding)}</strong></td><td>${r.interestRate||'—'}</td><td>${itag(r.instrumentType)}</td><td>${sb(r.status)}</td><td class="nc">${r.notes||'—'}</td></tr>`).join('');
-}
-function fillEqFilters(){
-    const i=[...new Set(S.equity.map(r=>r.instrumentType))].sort();
-    const v=[...new Set(S.equity.map(r=>r.vertical))].sort();
-    document.getElementById('eqInst').innerHTML='<option value="all">All Instruments</option>'+i.map(x=>`<option value="${x}">${x}</option>`).join('');
-    document.getElementById('eqVert').innerHTML='<option value="all">All Verticals</option>'+v.map(x=>`<option value="${x}">${x}</option>`).join('');
-}
-function renderEq(){
-    const q=document.getElementById('eqSearch').value.toLowerCase(),inst=document.getElementById('eqInst').value,vt=document.getElementById('eqVert').value,rrlf=document.getElementById('eqRrlf').value,{field,order}=S.es;
-    let rows=S.equity.filter(r=>{
-        const ms=r.name.toLowerCase().includes(q)||r.vertical.toLowerCase().includes(q)||(r.instrumentType||'').toLowerCase().includes(q);
-        const mi=inst==='all'||r.instrumentType===inst;
-        const mv=vt==='all'||r.vertical===vt;
-        const mr=rrlf==='all'?true:rrlf==='non-rrlf'?!r.instrumentType.toLowerCase().includes('rrlf'):rrlf==='active'?r.rrlf_status==='active':rrlf==='paid'?r.rrlf_status==='paid':true;
-        return ms&&mi&&mv&&mr;
-    }).sort((a,b)=>{let av=a[field],bv=b[field];if(!av)return 1;if(!bv)return -1;if(typeof av==='string')return order==='asc'?av.localeCompare(bv):bv.localeCompare(av);return order==='asc'?av-bv:bv-av;});
-    document.getElementById('eqMeta').textContent=`Showing ${rows.length} of ${S.equity.length} companies`;
-    document.getElementById('eqSub').textContent=`${S.equity.length} companies — RRLF (paid-off), SAFE, SEED, Impact Notes, Conv. Notes, Equity`;
-    const tb=document.getElementById('eqBody');
-    if(!rows.length){tb.innerHTML=`<tr><td colspan="6" class="empty"><span class="material-icons">search_off</span>No companies match filters</td></tr>`;return;}
-    tb.innerHTML=rows.map(r=>`<tr><td><strong>${r.name}</strong></td><td>${itag(r.instrumentType)}${r.rrlf_status?rrlfB(r.rrlf_status):''}</td><td>${r.vintageYear||'—'}</td><td>${r.vertical}</td><td>${ctB(r)}</td><td class="nc">${r.notes||'—'}</td></tr>`).join('');
-}
-
-// ═══════════════════════════════════════════
-// SORTING
-// ═══════════════════════════════════════════
-document.querySelectorAll('th[data-s]').forEach(th=>{
-    th.addEventListener('click',()=>{
-        const f=th.dataset.s,t=th.dataset.t,sk=t==='debt'?'ds':'es';
-        if(S[sk].field===f)S[sk].order=S[sk].order==='asc'?'desc':'asc';else{S[sk].field=f;S[sk].order='asc';}
-        document.querySelectorAll(`th[data-t="${t}"]`).forEach(x=>{x.textContent=x.textContent.replace(/ [↑↓↕]/,' ↕');});
-        th.textContent=th.textContent.replace(/ [↑↓↕]/,S[sk].order==='asc'?' ↑':' ↓');
-        t==='debt'?renderDebt():renderEq();
-    });
-});
-
-// ═══════════════════════════════════════════
-// FILTER EVENTS
-// ═══════════════════════════════════════════
-['debtSearch','debtStatus','debtVert'].forEach(id=>document.getElementById(id).addEventListener('input',renderDebt));
-['eqSearch','eqInst','eqVert','eqRrlf'].forEach(id=>document.getElementById(id).addEventListener('input',renderEq));
-
-// ═══════════════════════════════════════════
-// NAVIGATION
-// ═══════════════════════════════════════════
-document.querySelectorAll('.nav-item[data-sec]').forEach(item=>{
-    item.addEventListener('click',e=>{
-        e.preventDefault();
-        const sec=item.dataset.sec;
-        document.querySelectorAll('.nav-item').forEach(i=>i.classList.remove('active'));
-        item.classList.add('active');
-        document.getElementById('section-import').style.display=sec==='import'?'block':'none';
-        if(sec!=='import'){const el=document.getElementById('section-'+sec);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
-        if(window.innerWidth<768)document.getElementById('sidebar').classList.remove('open');
-    });
-});
-
-// ═══════════════════════════════════════════
-// BANNER
-// ═══════════════════════════════════════════
-function updateBanner(){
-    const b=document.getElementById('banner'),t=document.getElementById('bannerTxt');
-    if(S.src==='csv'){
-        b.classList.add('live');
-        t.innerHTML=`<strong>Live data mode:</strong> Dashboard is displaying your uploaded CSV data. Re-upload any file to refresh.`;
-        b.querySelector('.material-icons').textContent='check_circle';
-    } else {
-        b.classList.remove('live');
-        t.innerHTML=`<strong>Demo mode:</strong> Showing built-in sample data. Upload CSV files via sidebar or <a href="#" id="goImport" style="color:var(--primary)">Import tab</a> to load live data.`;
-        document.getElementById('goImport')?.addEventListener('click',e=>{e.preventDefault();document.querySelector('.nav-item[data-sec="import"]').click();});
-    }
-}
-
-// ═══════════════════════════════════════════
-// EXPORT
-// ═══════════════════════════════════════════
-document.getElementById('exportBtn').addEventListener('click',()=>{
-    const h=['name','vertical','capitalDeployed','loanOutstanding','interestRate','instrumentType','status','notes'];
-    const csv=[h.join(','),...S.debt.map(r=>h.map(k=>`"${(r[k]||'').toString().replace(/"/g,'""')}"`).join(','))].join('\n');
-    const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='ica_debt_portfolio.csv';a.click();
-    toast('Debt portfolio exported as CSV');
-});
-
-document.getElementById('menuToggle').addEventListener('click',()=>document.getElementById('sidebar').classList.toggle('open'));
-document.getElementById('refreshBtn').addEventListener('click',()=>{refreshAll();toast('Dashboard refreshed');});
-
-function toast(msg){const t=document.getElementById('toast');document.getElementById('toastMsg').textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3500);}
-function refreshAll(){renderKpis();renderVert();renderDeploy();renderInst();fillDebtFilters();fillEqFilters();renderDebt();renderEq();updateBanner();}
-
-refreshAll();
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script>
+        const D_DEBT = [
+            {name:'Progeny Coffee',vertical:'Beverage',capitalDeployed:353000,loanOutstanding:353000,interestRate:'5%',instrumentType:'Conv. Note',status:'delinquent',payments:[{date:'2026-01-15',p:0,i:1470,t:1470,s:'Paid'}]},
+            {name:'Courtsmith',vertical:'Professional Services',capitalDeployed:844000,loanOutstanding:303128,interestRate:'7%',instrumentType:'WCL',status:'current',payments:[{date:'2026-01-20',p:5000,i:1768,t:6768,s:'Paid'}]},
+            {name:'Renewal Mill',vertical:'CPG',capitalDeployed:600000,loanOutstanding:33808,interestRate:'5%',instrumentType:'WCL',status:'current'},
+            {name:'Abzz Snacks, Inc',vertical:'CPG',capitalDeployed:50000,loanOutstanding:0,interestRate:'RRLF',instrumentType:'RRLF',status:'paid'},
+            {name:'Alkali Rye Beverage',vertical:'Beverage',capitalDeployed:75000,loanOutstanding:0,interestRate:'RRLF',instrumentType:'RRLF',status:'paid'},
+            {name:'Crooked City Cider',vertical:'Beverage',capitalDeployed:60000,loanOutstanding:0,interestRate:'RRLF',instrumentType:'RRLF',status:'paid'}
+        ];
+        const D_EQ = [{name:'Annie\'s T Cakes',instrumentType:'Impact Note 1.0',vintageYear:2023,vertical:'CPG'}];
+        function $f(v) { return v ? '$'+v.toLocaleString() : '$0'; }
+        function renderTables() {
+            document.getElementById('debtBody').innerHTML = D_DEBT.map(r=>`<tr><td><a class="clickable-name" onclick="showDetail('${r.name}')">${r.name}</a></td><td>${r.vertical}</td><td>${$f(r.capitalDeployed)}</td><td>${$f(r.loanOutstanding)}</td><td>${r.interestRate}</td><td><span class="badge ${r.status==='current'?'b-cur':'b-del'}">${r.status}</span></td></tr>`).join('');
+            document.getElementById('eqBody').innerHTML = D_EQ.map(r=>`<tr><td><a class="clickable-name" onclick="showDetail('${r.name}')">${r.name}</a></td><td>${r.instrumentType}</td><td>${r.vintageYear}</td><td>${r.vertical}</td></tr>`).join('');
+            document.getElementById('nb-debt').textContent = D_DEBT.length;
+            document.getElementById('nb-eq').textContent = D_EQ.length;
+        }
+        function showSection(id) {
+            ['overview','debt','equity','detail'].forEach(s=>document.getElementById('section-'+s).style.display='none');
+            document.getElementById('section-'+id).style.display='block';
+            document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+            const nav = document.querySelector(`.nav-item[onclick*="${id}"]`);
+            if(nav) nav.classList.add('active');
+        }
+        function showDetail(name) {
+            const co = D_DEBT.find(c=>c.name===name) || D_EQ.find(c=>c.name===name);
+            if(!co) return;
+            showSection('detail');
+            document.getElementById('detName').textContent = co.name;
+            document.getElementById('detVert').textContent = co.vertical;
+            document.getElementById('detMeta').innerHTML = `<div class="kpi-card">Deployed<div>${$f(co.capitalDeployed||0)}</div></div><div class="kpi-card">Outstanding<div>${$f(co.loanOutstanding||0)}</div></div><div class="kpi-card">Instrument<div>${co.instrumentType}</div></div>`;
+            const pb = document.getElementById('payBody');
+            if(co.payments) {
+                document.getElementById('detPayments').style.display='block';
+                pb.innerHTML = co.payments.map(p=>`<tr><td>${p.date}</td><td>${$f(p.p)}</td><td>${$f(p.i)}</td><td>${$f(p.t)}</td><td>${p.s}</td></tr>`).join('');
+            } else { document.getElementById('detPayments').style.display='none'; }
+            document.getElementById('perfBody').innerHTML = `<tr><td>LTM 2025</td><td>$1.2M</td><td>$450k</td></tr>`;
+        }
+        function hideDetail() { showSection('overview'); }
+        renderTables();
+        new Chart(document.getElementById('cVert'), {type:'doughnut',data:{labels:['CPG','Beverage','Other'],datasets:[{data:[60,25,15],backgroundColor:['#0B5F6D','#F5A623','#6B46C1']}]}});
+        new Chart(document.getElementById('cDeploy'), {type:'bar',data:{labels:['Courtsmith','Renewal Mill','Progeny'],datasets:[{data:[844000,600000,353000],backgroundColor:'#0B5F6D'}]},options:{indexAxis:'y'}});
+        const kpis = {deployed: D_DEBT.reduce((a,b)=>a+b.capitalDeployed,0)+D_EQ.reduce((a,b)=>a+(b.capitalDeployed||0),0), companies: D_DEBT.length+D_EQ.length, notes: D_DEBT.reduce((a,b)=>a+b.loanOutstanding,0)};
+        document.getElementById('kpiGrid').innerHTML = `<div class="kpi-card"><div>CAPITAL DEPLOYED</div><div class="kpi-val">${$f(kpis.deployed)}</div></div><div class="kpi-card"><div>COMPANIES</div><div class="kpi-val">${kpis.companies}</div></div><div class="kpi-card"><div>NOTES RECEIVABLE</div><div class="kpi-val">${$f(kpis.notes)}</div></div>`;
+    </script>
 </body>
 </html>
